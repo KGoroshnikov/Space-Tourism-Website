@@ -1,0 +1,189 @@
+body{
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.pick-text{
+  color: white;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+}
+
+.num-text{
+  opacity: 0.25;
+  font-weight: 700;
+}
+
+.bg-img{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-image: url(assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+.main-content{
+  padding: 60px 0px 80px 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+p{
+  margin: 0;
+}
+
+.content{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-technology,
+.info-technology{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-technology{
+  width: 80px;
+  height: 80px;
+  color: white;
+  border-radius: 40px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 18px 0;
+  font-family: Bellefair;
+  font-size: 32px;
+  transition: border 0.15s, background-color 0.15s;
+}
+
+.btn-technology:hover{
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+}
+
+#terminology-text{
+  font-family: Barlow Condensed;
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  color: rgb(208, 214, 249);
+}
+
+#name-text{
+  font-family: Bellefair;
+  font-size: 56px;
+  color: white;
+  margin: 14px 0;
+}
+
+#description-text{
+  font-family: Barlow;
+  line-height: 32px;
+  font-size: 18px;
+  color: rgb(208, 214, 249);
+  max-width: 445px;
+}
+
+@media(max-width: 1350px){
+  .bg-img{
+    background-image: url(assets/technology/background-technology-tablet.jpg);
+  }
+  .main-content{
+    padding: 0;
+    flex: 1;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pick-text{
+    align-self: flex-start;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    letter-spacing: 3.38px;
+  }
+
+  .img-technology{
+    order: 1;
+  }
+
+  .img-technology img{
+    content: url(assets/technology/image-launch-vehicle-landscape.jpg);
+    width: 100%;
+  }
+
+  .buttons-technology{
+    order: 2;
+    flex-direction: row;
+  }
+
+  .info-technology{
+    order: 3;
+    align-items: center;
+  }
+
+  #description-text{
+    text-align: center;
+    max-width: 65%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .content{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .btn-technology{
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    margin: 0px 8px;
+  }
+
+  #name-text{font-size: 40px;}
+
+}
+
+@media(max-width: 600px){
+  .bg-img{
+    background-image: url(assets/technology/background-technology-mobile.jpg);
+  }
+
+  .pick-text{
+    padding:0;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .btn-technology{
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin: 0px 8px;
+  }
+
+  #terminology-text{
+    letter-spacing: 2.36px;
+    font-size: 14px;
+  }
+  #name-text{font-size: 24px;}
+
+  #description-text{
+    max-width: 95%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
